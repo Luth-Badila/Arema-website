@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FF0000;
+    --secondary-color: #0b3f95;
+}
+
+
+/*flex*/
+
+img {
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+    z-index: -1;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+    padding: 10px 2%;
+    height: 70px;
+    justify-content: space-between;
+    /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+    background: var(--secondary-color);
+    position: relative;
+    top: 0;
+}
+
+
+/* OldNav */
+
+
+/* 
+.nav ul {
+    margin-left: 600px;
+}
+
+.nav ul li {
+    width: 40px;
+    margin-right: 60px;
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: #fff;
+}
+
+.nav ul li .login {
+    border-style: solid;
+    border-width: 10px 20px;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+}
+
+#icon {
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+.watch {
+    width: 100px;
+    background: var(--primary-color);
+    padding: 25px;
+    color: #fff;
+}
+
+.logo {
+    width: 130px;
+    position: absolute;
+    margin-top: -20px;
+    margin-bottom: 280px;
+    z-index: 10000;
+}
+
+.nav #icon {
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+} */
+
+
+/* SideNav */
+
+#SideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: var(--secondary-color);
+    z-index: 2;
+    transition: 0.5s;
+}
+
+nav ul img {
+    width: 200px;
+    padding: 0;
+}
+
+nav ul .login a {
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 10px;
+    padding: 15px 20px 15px 20px;
+    color: #fff;
+}
+
+nav ul .live a {
+    background: var(--primary-color);
+    padding: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.arema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arema img {
+    width: 80px;
+}
+
+#menubtn {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menubtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+
+/* SECTION */
+
+section {
+    display: grid;
+    grid-template-areas: 'hero hero feature-1' 'hero hero feature-2';
+    position: relative;
+    margin: 0;
+    z-index: -10000;
+}
+
+.hero {
+    grid-area: hero;
+    width: 100%;
+    min-height: 100vh;
+    /* padding: 10px; */
+    /* background-image: url(images/MU1.jpg);
+    background-size: cover;
+    background-position: center; */
+    padding: 0;
+}
+
+.hero .heading,
+.hero .sub-heading {
+    display: none;
+}
+
+.hero-img {
+    display: flex;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
+    /* visibility: hidden; */
+}
+
+
+/* .hero>* {
+    display: none;
+} */
+
+.features {
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(images/MU2.jpg);
+    background-size: cover;
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(images/MU3.jpg);
+    background-size: cover;
+}
+
+.features .News {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+
+/* CARD */
+
+.card-region {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px 100px 10px; */
+}
+
+.card {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.card img {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 80px;
+}
+
+.card i {
+    position: absolute;
+    top: 40px;
+    left: -15px;
+    width: 280px;
+    height: 50px;
+    background: var(--secondary-color);
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+}
+
+.card i::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    width: 15px;
+    height: 30px;
+    background: var(--secondary-color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 2;
+}
+
+.card i::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    width: 15px;
+    height: 15px;
+    background: var(--secondary-color);
+    z-index: 1;
+}
+
+.card i h3 {
+    position: relative;
+    top: 7px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card p {
+    position: absolute;
+    top: 190px;
+    left: 50px;
+    width: 200px;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, var(--secondary-color), #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.sci .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+/* Responsive Breakdown */
+
+@media (max-width: 767px) {
+    .watch {
+        visibility: hidden;
+    }
+    #icon {
+        display: block;
+        cursor: pointer;
+    }
+    .nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .card-region {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .card {
+        position: relative;
+    }
+    .card p {
+        width: 80%;
+    }
+    footer {
+        bottom: unset;
+    }
+    .col {
+        flex-basis: 100%;
+    }
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+}
