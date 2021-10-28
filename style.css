@@ -218,13 +218,13 @@ section {
 
 .feature-1 {
     grid-area: feature-1;
-    background-image: url(images/MU2.jpg);
+    background-image: url(Images/MU2.jpg);
     background-size: cover;
 }
 
 .feature-2 {
     grid-area: feature-2;
-    background-image: url(images/MU3.jpg);
+    background-image: url(Images/MU3.jpg);
     background-size: cover;
 }
 
