@@ -1,319 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Arema FC</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/lipstick.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
-    <script src="https://kit.fontawesome.com/5d5716bc3e.js"></script>
-    <title>Smooth Scroll Animation</title>
+    <script src="https://kit.fontawesome.com/5d5716bc3e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="icon" href="images/Arema.png">
 </head>
 
 <body>
-    <main class="app">
-        <header data-aos="fade-up">
-            <div class="left-menu">
+    <div class="container">
+        <!-- flex -->
+        <!-- Header
+    <header>
+        <nav class="flex-div">
+            <div class="nav-left flex-div">
+                <a href=""><img src="images/Arema.png" class="logo"></a>
+            </div>
+            <div class="nav">
                 <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Our Beauty</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Academy</a></li>
+                    <li><a href="">Club</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="" class="login">Login</a></li>
                 </ul>
             </div>
-            <div class="logo">
-                <img src="images/logo.png" alt="">
-            </div>
-            <div class="right-menu">
+            <li><a href="#" class="watch">Watch Live Stream</a></li>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+    </header>-->
+
+        <!-- SideNav -->
+        <div id="SideNav">
+            <nav>
                 <ul>
-                    <li>
-                        <a href="#">Our Story</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Account</a>
-                    </li>
+                    <li><a href="#banner">HOME</a></li>
+                    <li><a href="#feature">NEWS</a></li>
+                    <li><a href="#service">ACADEMY</a></li>
+                    <li><a href="#testimonial">CLUB</a></li>
+                    <li><a href="#footer">TRIBUNFACE</a></li>
+                    <li class="login"><a href="#footer">LOGIN</a></li>
+                    <li class="live"><a href="#footer">WATCH LIVE STREAM</a></li>
                 </ul>
-            </div>
-        </header>
-
-        <section class="banner" data-scene>
-            <div class="container">
-                <div class="text" data-aos="zoom-out" data-aos-delay="1000">
-                    <h1>Nice beauty is not<br> compromise your beauty</h1>
-                    <p>Diamorem consectetur feugiat dolorum culpa<br>pulvinar morbi militia</p>
-                    <a href="#" class="btn">Learn More</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="brand-logo" data-scene>
-            <div class="container">
-                <div class="brand-logo-inner" data-aos="fade-up">
-                    <div class="item"><img src="images/brand-logo1.png" alt=""></div>
-                    <div class="item"><img src="images/brand-logo2.png" alt=""></div>
-                    <div class="item"><img src="images/brand-logo3.png" alt=""></div>
-                    <div class="item"><img src="images/brand-logo4.png" alt=""></div>
-                    <div class="item"><img src="images/brand-logo5.png" alt=""></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sec1" data-scene>
-            <div class="container">
-                <div class="sec1-inner">
-                    <div class="text text-left" data-aos="zoom-out-right">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cupiditate maxime facilis voluptatum</h3>
-                    </div>
-                    <div class="text text-right" data-aos="zoom-out-left">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus veniam porro incidunt delectus, iste vitae quam excepturi autem voluptates et distinctio earum. Nihil fugit quaerat tempora maiores! Unde, odio doloribus!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sec2 left-right-sec" data-scene>
-            <div class="container">
-                <div class="sec2-inner">
-                    <div class="img" data-aos="zoom-out-up">
-                        <div class="img"><img src="images/img1.jpg" alt=""></div>
-                    </div>
-                    <div class="text" data-aos="zoom-out-left">
-                        <h2>Lorem ipsum dolor sit amet.</h2>
-                        <div class="text-inner">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perspiciatis officia vero maiores ea tenetur modi provident iste eveniet doloremque!</p>
-                            <a href="#" class="btn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="sec2 left-right-sec" data-scene>
-            <div class="container">
-                <div class="sec2-inner">
-                    <div class="text" data-aos="zoom-out-right">
-                        <h2>Lorem ipsum dolor sit amet.</h2>
-                        <div class="text-inner">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perspiciatis officia vero maiores ea tenetur modi provident iste eveniet doloremque!</p>
-                            <a href="#" class="btn">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="img" data-aos="zoom-out-left">
-                        <div class="img"><img src="images/img2.jpg" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sec3" data-scene>
-            <div class="container">
-                <div class="sec3-inner" data-aos="zoom-out-left">
-                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                    <i class="fas fa-chevron-left prev"></i>
-                    <i class="fas fa-chevron-right next"></i>
-                    <div class="sec3-slider">
-                        <div class="item">
-                            <img src="images/slide1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/slide2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/slide3.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/slide4.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/slide5.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/slide6.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="sec4" data-scene>
-            <div class="container">
-                <div class="sec4-inner" data-aos="zoom-out-right">
-                    <h2>Our Collection</h2>
-                    <div class="sec4-boxes">
-                        <div class="box">
-                            <h6>Asperiose</h6>
-                            <div class="img">
-                                <img src="images/collection-img1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box">
-                            <h6>Asperiose</h6>
-                            <div class="img">
-                                <img src="images/collection-img1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box">
-                            <h6>Asperiose</h6>
-                            <div class="img">
-                                <img src="images/collection-img1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box">
-                            <h6>Asperiose</h6>
-                            <div class="img">
-                                <img src="images/collection-img1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box">
-                            <h6>Asperiose</h6>
-                            <div class="img">
-                                <img src="images/collection-img1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box">
-                            <h6>Asperiose</h6>
-                            <div class="img">
-                                <img src="images/collection-img1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box">
-                            <h6>Asperiose</h6>
-                            <div class="img">
-                                <img src="images/collection-img1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box">
-                            <h6>Asperiose</h6>
-                            <div class="img">
-                                <img src="images/collection-img1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box">
-                            <h6>Asperiose</h6>
-                            <div class="img">
-                                <img src="images/collection-img1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box">
-                            <h6>Asperiose</h6>
-                            <div class="img">
-                                <img src="images/collection-img1.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <footer data-scene>
-            <div class="container">
-                <div class="footer-inner" data-aos="zoom-out-up">
-                    <div class="col">
-                        <img src="images/logo.png" alt="">
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Collection</a>
-                            </li>
-                            <li>
-                                <a href="">LookBook</a>
-                            </li>
-                            <li>
-                                <a href="">About</a>
-                            </li>
-                            <li>
-                                <a href="">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li>
-                                <a href="">Store Location</a>
-                            </li>
-                            <li>
-                                <a href="">Knowledge base</a>
-                            </li>
-                            <li>
-                                <a href="">Customer Support</a>
-                            </li>
-                            <li>
-                                <a href="">Business Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li>
-                                <a href="">Instagram</a>
-                            </li>
-                            <li>
-                                <a href="">Facebook</a>
-                            </li>
-                            <li>
-                                <a href="">Twitter</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <div class="copyright" data-scene>
-            <div class="container" data-aos="zoom-out-up" data-aos-offset="0">
-                <p>@ 2021 Nice Beauty | All Right Reserved</p>
+            </nav>
+            <div class="arema">
+                <img src="images/Arema.png">
             </div>
         </div>
+        <div id="menubtn">
+            <img src="images/menu.png" id="menu">
+        </div>
 
-    </main>
+        <!-- Section -->
+        <section>
+            <div class="hero">
+                <div class="hero-img">
+                    <img src="images/MU1.jpg" alt="">
+                    <!-- <img src="images/MU2.jpg" alt="">
+                <img src="images/MU3.jpg" alt=""> -->
+                </div>
+                <h2 class="heading">United Army</h2>
+                <p class="sub-heading">All About United</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="News">Match preview</h4>
+                <p class="hasil">Hasil Pertandingan Terbaru</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="News">Transfer News</h4>
+                <p class="hasil">Hasil Perburuan Pemain</p>
+            </div>
+        </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        //Slick Slider
-        $('.sec3-slider').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            speed: 1500,
-            nextArrow: $('.next'),
-            prevArrow: $('.prev')
-        });
+        <section class="card-region">
+            <div class="card">
+                <i><h3>Carlos Fortes</h3></i>
+                <img src="images/Arema.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A rerum modi ad eum cupiditate asperiores aut, alias sunt eos quasi. Fugiat voluptas, animi quibusdam ratione hic delectus voluptatibus recusandae, nesciunt cum, et excepturi soluta?</p>
+            </div>
+            <div class="card">
+                <i><h3>Hanif Sjahbandi</h3></i>
+                <img src="images/Arema.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptate temporibus unde culpa dicta ad, quod, corrupti veniam repudiandae quidem error nihil repellat, harum provident. Molestiae unde assumenda aliquid atque?</p>
+            </div>
+            <div class="card">
+                <i><h3>Dendi Santoso</h3></i>
+                <img src="images/Arema.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero neque libero facilis asperiores modi quasi in accusantium tempore quae explicabo ratione distinctio dolor, corporis maxime, optio nostrum ea doloremque quod!</p>
+            </div>
+            <div class="card">
+                <i><h3>Ahmad Alfarizie</h3></i>
+                <img src="images/Arema.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi eveniet, minus dolorem, tempora magni sapiente, consequuntur maiores ipsum delectus aspernatur molestias vel ullam eos sunt inventore. Reprehenderit ad excepturi est.</p>
+            </div>
+        </section>
 
-        //Rolly JS
-        const r = rolly({
-            view: document.querySelector('.app'),
-            native: true,
-            // other options
-        });
-        r.init();
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="images/Arema.png" class="logo ">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nulla tempore ratione omnis fugit porro culpa voluptatum numquam consequuntur laborum! </p>
+                </div>
+                <div class="col">
+                    <h3>Office
+                        <div class="underline"><span></span></div>
+                    </h3>
+                    <p>Don't Know</p>
+                    <p>Wasteland</p>
+                    <p>North Korea</p>
+                    <p class="email-id">Roadrunner@gmail.com</p>
+                    <h4>+ 73267817826678</h4>
+                </div>
+                <div class="col">
+                    <h3>Links
+                        <div class="underline"><span></span></h3>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">News</a>
+                        </li>
+                        <li>
+                            <a href="">Academy</a>
+                        </li>
+                        <li>
+                            <a href="">Club</a>
+                        </li>
+                        <li>
+                            <a href="">Tribunface</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Newsletter
+                            <div class="underline"><span></span></h3>
+                        <form>
+                            <i class="far fa-envelope"></i>
+                            <input type="email" placeholder="Enter Your Email Id">
+                            <button type="submit"><i class="fas fa-arrow-right"></i> </button>
+                        </form>
+                        <div class="sci">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-whatsapp"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="copyright">Luth Badila @ 2021 - All Right Reserved</p>
+        </footer>
+        </div>
 
-        //AOS
-        AOS.init({
-            duration: 1500 //Global Duration
-        });
-    </script>
+        <script>
+            // Old JavaScript
+            //$(document).ready(function() {
+            //    $('# icon').click(function() {
+            //        $('ul').toggleClass('show');
+            //    });
+            //});
+
+            // New JavaScript
+            let menubtn = document.getElementById("menubtn")
+            let SideNav = document.getElementById("SideNav")
+            let menu = document.getElementById("menu")
+
+            SideNav.style.right = "-250px";
+
+            menubtn.onclick = function() {
+                if (SideNav.style.right == "-250px") {
+                    SideNav.style.right = "0";
+                    menu.src = "images/close.png";
+                } else {
+                    SideNav.style.right = "-250px";
+                    menu.src = "images/menu.png";
+                }
+            }
+
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 1000,
+                speedAsDuration: true
+            })
+        </script>
 </body>
 
 </html>
